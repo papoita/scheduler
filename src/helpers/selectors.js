@@ -8,13 +8,14 @@ export function getAppointmentsForDay(state, day) {
     return [];
   }
 
-  const appointmentsForDay = selectedDay.appointments.map(eachAppointmentId => state.appointments[eachAppointmentId])
-  if(!appointmentsForDay){
+  const appointmentsForDay = selectedDay.appointments.map(
+    (eachAppointmentId) => state.appointments[eachAppointmentId]
+  );
+  if (!appointmentsForDay) {
     return [];
   }
 
   return appointmentsForDay;
-
 }
 
 export function getInterviewersForDay(state, day) {
@@ -27,32 +28,27 @@ export function getInterviewersForDay(state, day) {
     return [];
   }
 
-  const interviewersForDay = selectedDay.interviewers.map(eachInterviewerId => state.interviewers[eachInterviewerId])
-  if(!interviewersForDay){
+  const interviewersForDay = selectedDay.interviewers.map(
+    (eachInterviewerId) => state.interviewers[eachInterviewerId]
+  );
+  if (!interviewersForDay) {
     return [];
   }
 
   return interviewersForDay;
-
 }
 
-
-
-
-
-
- export function getInterviewsForDay(state, interview) {
-
+export function getInterview(state, interview) {
   if (!state || !interview) {
     return null;
   }
-//access interviewer obj in state then : state.interviewers[interview.interviewer] === interviewer
-//
-  const newInterview = {"student": interview.student, "interviewer": state.interviewers[interview.interviewer] }
+  //access interviewer obj in state then : state.interviewers[interview.interviewer] === interviewer
+  //
+  const interviewerId = interview.interviewer
+  const interviewObj = {
+    student: interview.student,
+    interviewer: state.interviewers[interviewerId],
+  };
 
-  return newInterview;
-
-
-
+  return interviewObj;
 }
-
