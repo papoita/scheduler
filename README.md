@@ -27,6 +27,11 @@ This project was completed as part of Lighthouse Labs bootcamp by [Paola Perez L
 
 Install dependencies with `npm install`.
 
+Run the client scheduler repo at port 8000 with `npm start`
+
+Run the API scheduler-api repo at port 8001 with `npm start`
+
+
 ### Dependencies
 * axios
 * classnames
