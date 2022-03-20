@@ -41,11 +41,6 @@ Run the API scheduler-api repo at port 8001 with `npm start`
 * react-scripts
 
 
-## Running Webpack Development Server
-
-```sh
-npm start
-```
 
 ## Running Jest Test Framework
 
