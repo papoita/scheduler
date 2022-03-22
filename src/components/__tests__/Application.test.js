@@ -49,7 +49,7 @@ describe("Application", () => {
     fireEvent.click(getByAltText(appointment, 'Sylvia Palmer'));
 
     fireEvent.click(getByText(appointment, 'Save'));
-    expect(getByText(appointment, 'Saving')).toBeInTheDocument();
+    expect(getByText(appointment, 'Saving...')).toBeInTheDocument();
 
     await waitForElement(() => getByText(appointment, 'Lydia Miller-Jones'));
 
