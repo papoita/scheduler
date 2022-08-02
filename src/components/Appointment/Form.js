@@ -19,19 +19,23 @@ export default function Form(props) {
     reset();
     onCancel();
   }
-
+//for debugging which part of the function was not being read 
   function validate() {
+  //  console.log("this is beginning")
     if (studentName === "") {
       setError("Student name cannot be blank");
+   //   console.log("student name is blank")
       return;
     }
     if (!interviewerId) {
       setError("Please ALSO select an interviewer");
+    //  console.log("interviewer name is blank")
       return;
     }
-
+   // console.log("this is middle")
     setError("");
     onSave(studentName, interviewerId);
+  //  console.log("this is middle")
   }
 
   return (
