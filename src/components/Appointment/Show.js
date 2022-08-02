@@ -9,7 +9,10 @@ export default function Show (props){
     <h2 className="text--regular">{student}</h2>
     <section className="interviewer">
       <h4 className="text--light">Interviewer</h4>
+      {/* Error because of type of data sent to db 
       <h3 className="text--regular">{interviewer? interviewer.name : interviewer}</h3>
+      */}
+      <h3 className="text--regular">{interviewer? interviewer.name : ""}</h3>
     </section>
   </section>
   <section className="appointment__card-right">
