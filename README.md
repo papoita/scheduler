@@ -1,6 +1,15 @@
 @[papoita](https://github.com/papoita) | version 1.0.0
 
+
+# Deployment
+
+Deployed using Heroku, Netlify and CircleCI
+
+
+[Papo's scheduler project](https://paposcheduler.netlify.app/)
+
 # Interview Scheduler
+
 
 This project was completed as part of Lighthouse Labs bootcamp by [Paola Perez Leiva](https://www.linkedin.com/in/perezleivapaola/)
 
@@ -53,3 +62,4 @@ npm test
 ```sh
 npm run storybook
 ```
+
